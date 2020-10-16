@@ -1,137 +1,116 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GYG</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script> 
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    
-  </head>
+<html lang="en">
 
-  <body>
-<!-- Start of navbar -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid navbar-custom">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Correlations</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+</head>
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="row">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="col-xs-9 phone-nav">
-          <!-- <img class="navbar-brand" src="assets/images/group_logo.png" id="logo"> -->
-        </div>
-      </div>
+<body>
+  <center>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right navbar-right-custom">
-          <li><a style= "color: beige; font-size: 17px;" href="index.html">Home</a></li>
-          <li><a style= "color: beige; font-size: 17px;" href="about_us_3.html">About Us</a></li>
-          <!--li><a style= "color: beige; font-size: 17px;" href="data.html">Data</a></li-->
-          <li class="dropdown">
-            <a style= "color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data
-               <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="data.html">Dataset1</a></li>
-              <li><a href="whatoplay.html">Dataset2</a></li>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <!-- <img class="navbar-brand" src="assets/images/group_logo.png" id="logo"> -->
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li><a style="color: beige; font-size: 17px;" href="index.html">Home</a></li>
+              <li><a style="color: beige; font-size: 17px;" href="about_us.html">About Us</a></li>
+              <!--li><a style= "color: beige; font-size: 17px;" href="data.html">Data</a></li-->
+              <li class="dropdown">
+                <a style="color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-haspopup="true" aria-expanded="false">Data
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="datatable1.html">Data Table I</a></li>
+                  <li><a href="datatable2.html">Data Table II</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a style="color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-haspopup="true" aria-expanded="false">Visualizations
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="GYP.html">GYP</a></li>
+                  <li><a href="GYG.html">GYG</a></li>
+                  <li><a href="GP.html">GP</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a style="color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-haspopup="true" aria-expanded="false">Machine Learning
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="ML1.html">Linear Regression</a></li>
+                  <li><a href="ML2.html">Model of Bestfit</a></li>
+                  <li><a href="ML3.html">Linear Regression II</a></li>
+                  <li><a href="ML4.html">Model of Bestfit II</a></li>
+                </ul>
+              </li>
+              <li><a style="color: beige; font-size: 17px;" href="project_outcomes.html"> Outcomes</a></li>
             </ul>
-          </li>
-          <li class="dropdown">
-            <a style= "color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations
-               <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="GYP.html">GYP</a></li>
-              <li><a href="GYG.html">GYG</a></li>
-              <li><a href="GP.html">GP</a></li>
-              <li><a href="WTP.html">WTP</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a style= "color: beige; font-size: 17px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning
-               <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="ML1.html">Linear Regression</a></li>
-              <li><a href="ML2.html">Model of Bestfit</a></li>
-              <li><a href="ML3.html">Linear Regression1</a></li>
-              <li><a href="ML4.html">Model of Bestfit1</a></li>
-            </ul>
-          </li>
-          <li><a style= "color: beige; font-size: 17px;" href="project_outcomes.html"> Outcomes</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- End of navbar -->
-
-  <!-- Start of container -->
-    <!-- <div class="container">
-      <section class="row">
-        <div class="col-md-12">
-          <article class="description-content">
-            <div class="col-md-2">
-              <div class="boxed search-box" style="height: 150px; width:200px; color: white"><strong>Select Year:</strong> 
-                <br></br>
-                <form id="form-input">
-                  <div class="form-group">
-                    <input class="form-control" id="year" type="text" placeholder="1980-2020">
-                  </div>
-                  <button id="button" type="button" class="btn btn-default">Enter</button>
-                </form>
-              </div>
-                </form>
-              <br></br>
-            </div>
-            <div class="col-md-5">
-              <div id="genre" ></div>
-            </div>
-            <div class="col-md-5">
-              <div id="platform"></div>
-            </div>
-          </article>
+          </div><!-- /.navbar-collapse -->
         </div>
-        <div class ="col-md-12">
-          <article class=" description-content" style="margin-top:0px; height: 500px">
-            <div class="col-md-6">
-              <div id="top_10_sales"></div>
-              <div id="myDiv"></div>
-              <div id="myBubble"></div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div> -->
-  
-  <!-- End of container -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
 
-    <!-- jQuery CDN >
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script-->
-
-    <!-- Bootstrap CDN >
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
-    <script src="assets/js/per_year.js"></script-->
+    <!-- jQuery CDN -->
+    <h2 style="font-size: 20px; color: rgb(0, 0, 0)"> TITLE </h2>
+    <figure id="main1_figure">
+      <figure>
+        <div class='tableauPlaceholder' id='viz1602867929903' style='position: relative'><noscript><a href='#'><img
+                alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3-GYG&#47;Dashboard1&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Project3-GYG&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3-GYG&#47;Dashboard1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' /></object>
+          </div>
+        <script
+          type='text/javascript'>                    var divElement = document.getElementById('viz1602867929903'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </figure>
+      <figcaption> <a style="color: black; font-size: 17px;">
+        In this dashboard, Genre dominates the conversation with their sales and popularity.</a>
+      </figcaption>
 
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="https://d3js.org/d3.v5.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="assets/js/GYG.js"></script>
-      <div class='tableauPlaceholder' id='viz1602798201268' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3-GYG_16027508225060&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Project3-GYG_16027508225060&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3-GYG_16027508225060&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1602798201268');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-  </body>
+  </center>
+</body>
 
 </html>
